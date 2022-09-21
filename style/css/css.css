@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+.body{
+background-color: #fff;
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -102,10 +104,13 @@ html {
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #ebebeb;
     box-sizing: border-box;
 }
-
+.container_body{
+}
+.body_top{
+    background-color: #f3f3f3;
+}
 .nav_main li {
     padding: 0 0.5rem;
 }
@@ -121,7 +126,27 @@ html {
     color: black;
     font-size: 130%;
 }
+.nav_item {
+    position: relative;
 
+}
+.nav_item::before {
+    content: "";position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+.nav_item:hover.nav_item::before {
+    opacity: 0.8;
+    width:50%;
+
+
+}
 .nav_main2 .nav_item1 {
     padding: 0 1rem;
 }
@@ -129,24 +154,29 @@ html {
 .nav_item1 a {
     text-decoration: none;
 }
+.container_body{
+}
 .container_footer{
-background-color: #f3f3f3;
-padding: 50px 7px;
 box-sizing: border-box;
 border-top: 1px solid #ebebeb;
+background-color: #f3f3f3;
 }
-.tiller_footer{
-    display: inline-block;
-    background: #006cc2;
-    background: linear-gradient(to right,#006cc2 40%,#2196f3);
-    color: #fff;
-    padding: 0 20px;
-    margin-bottom: 26px;
-    position: relative;
-    font-weight: 600;
-    letter-spacing: 1px;
+.titler_footer_top{
+    position: absolute;
+    top: 156px;
+    left: 204px;
 }
-.tiller_footerc:after {
+.titler_footer_top .heading{
+        display: inline-block;
+        background: #006cc2;
+        color: #fff;
+        padding: 7px 25px;
+        margin-bottom: 26px;
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+}
+.titler_footer_top:after{
     content: "";
     width: 0;
     height: 0;
@@ -154,6 +184,69 @@ border-top: 1px solid #ebebeb;
     border-right: 10px solid transparent;
     border-top: 10px solid #006cc2;
     position: absolute;
-    top: 100%;
+    top: 42%;
     left: 15px;
+}
+.top_footer{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_bottom{
+    min-height: 52px;
+    display: flex;
+    padding: 0 8rem;
+    margin: 0 100px;
+}
+
+.footer_list{
+    display: flex;
+    width: 1140px;
+    margin: 0 100px;
+    margin-top: 38px;
+    margin-bottom: -21px; 
+    
+}
+.footer_list .colunm{
+    width: 16.6%;
+    font-weight: 600;
+}
+.colunm p{
+margin: 9px;
+margin-right: 0px;
+}
+.colunm p i{
+margin: 0 20px;
+}
+.footer_list .colunm p:hover{
+    color: red;
+}
+.footer_final{
+    height: 120px;
+    width: 100%;
+    margin-top: 100px;
+}
+.footer_final_rule{
+    list-style-type: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.footer_final_rule li{
+    padding: 0 20px;
+}
+.footer_final_rule .footer_center_rule{
+    border-right:solid 1px black;
+    border-left:solid 1px black;
+}
+.footer_final .content_final{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.manhwa_genre a{
+color: #333;
+text-decoration: none;
+font-weight: 600px;
 }

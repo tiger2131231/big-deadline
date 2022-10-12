@@ -346,8 +346,9 @@ margin-bottom: -15px;
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-top: -11px;
-    margin-right: 19px;
+    margin-top: -5px;
+    margin-right: 10px;
+    margin-left: 117px;
 }
 .title_manageupdate{
 border-bottom: 2px solid #ebebeb;
@@ -371,7 +372,8 @@ margin-bottom: 25px;
 }
 /*manageupdate_both_left*/
 .manageupdate_both_mainbig{
-margin-top: -20px;
+    margin-top: -28px;
+    margin-left: 115px;
 }
 .manageupdate_both_left {
     width: 70%;
@@ -404,7 +406,7 @@ flex-wrap: wrap;
     font-weight: 600;
     color: #333;
     margin-top: 6px;
-    margin-right: 49px;
+    margin-right: 59px;
 }
 .manage_big img{
     border-radius: 11px;
@@ -412,8 +414,8 @@ flex-wrap: wrap;
 }
 .manage_big p{
     position: absolute; 
-    margin-top: 24px;
-    margin-left: 123px;
+    margin-top: 28px;
+    margin-left: 109px;
     color: #888888;
 }
 .chapter-button{

@@ -351,6 +351,7 @@ margin-bottom: -15px;
     margin-left: 117px;
 }
 .title_manageupdate{
+position: absolute;
 border-bottom: 2px solid #ebebeb;
 margin-bottom: 25px;
 }
@@ -422,6 +423,10 @@ flex-wrap: wrap;
     color: #666;
     font-weight: 600;
 }
+.chapter-button:hover{
+    background-color: #006cc2; 
+    color: white;
+}
 .font-meta{
     font-weight: 600!important;
     line-height: 1.5;
@@ -436,10 +441,10 @@ flex-wrap: wrap;
 }
 
 .box {
-    border: 1px gray solid;
+    border: 3px #e1e1e1 solid;
 }
 .box1 {
-    border: 1px gray solid;
+    border: 3px #e1e1e1 solid;
 }
 .manageupdate_both_right img {
     width: 23%;
